@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html>
+<!-- By R.Parker 2016 http://grapevine.com.au/~wisteria/index.html or https://github.com/pyblendnet-js
+     MIT licence included and applies also to app.js -->
+<head>
+    <title>Gallery Stalker</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+    <style>
+        /* following two viewport lines are equivalent to meta viewport statement above, and is needed for Windows */
+        @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }
+        @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+        @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }
+        @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+    </style>
+    <link rel="stylesheet" href="css/app.css">
+    <style type="text/css"  src="css/app.css">
+   </style>
+</head>
+<body>
+    <script src="cordova.js"></script>          <!-- "Phantom" cordova.js required for projects that use plugins -->
+    <script src="js/app.js"></script>           <!-- for your event code, see README and file comments for details -->
+    <script src="xdk/init-dev.js"></script>     <!-- normalizes device and document ready events, see file for details -->
+    <div id="id_pages">    
+    <div id="id_home_div">
+      <div id="id_header">
+        <span class="header left btn" id="id_menu_in_btn">InMenu</span>
+        <span class="header center btn" id="id_title_btn" >Gallery Stalker</span>
+        <span class="header right btn" id="id_menu_out_btn">OutMenu</span>
+      </div>
+      <div id="id_content_div" class="content">
+        <img id="backImg" style="position: absolute; left: 0px; z-index: 0" />
+        <canvas id="canvas" style="position: absolute; left: 0; z-index: 1; background-color: rgba(0,0,0,0)"></canvas>
+        <svg id="svgView" style="position: absolute; left: 0px; z-index: 2; background-color: rgba(0,0,0,0)"></svg>
+  	    <canvas id="canvas2" style="position: absolute; left: 0px; z-index: 3; background-color: rgba(0,0,0,0)"></canvas>';
+      </div>
+      <div class="palette-case"><div id="id_pallet_div"></div>
+      <div style="text-align:right;margin-top:4px;">
+		 <img id="id_stalker_div" src="img/gallery_stalker_icon_36x36.png" style="text-align: right; margin-top: 4px;" />
+      </div>
+	    </div>
+		</div>
+    </div>
+  <div id="saverDiv" style="display:none;">
+      <img id="saverImg" style="position: absolute; left: 0px; top: 0px; z-index: 10" />
+	    <canvas id="canvas3" style="position: absolute; left: 0px;  top: 0px; z-index: 11; background-color: rgba(0,0,0,0)"></canvas>';
+  </div>
+  </body>
+</html>
